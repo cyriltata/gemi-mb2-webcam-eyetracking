@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    mb2-webcam-eyetracking:
+        image: ghcr.io/cyriltata/gemi/mb2-webcam-eyetracking:latest
+        container_name: mb2-webcam-eyetracking-latest
+        ports: 
+            - "127.0.0.1:10630:443"
+        volumes:
+            - "./data:/var/www/data"
+  
